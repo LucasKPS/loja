@@ -1,0 +1,262 @@
+/* Reset de Estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Estilos gerais */
+body {
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #333;
+    padding: 1rem 0;
+}
+
+.navbar .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.navbar .brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.navbar .nav-actions a {
+    color: #fff;
+    margin-left: 1rem;
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.navbar .nav-actions a:hover {
+    background-color: #45a049;
+}
+
+.navbar .nav-actions .btn-primary {
+    background-color: #007bff;
+}
+
+.navbar .nav-actions .btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Forms */
+form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+form input, form textarea, form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+form input[type="file"] {
+    width: auto;
+}
+
+form button {
+    background-color: #28a745;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #218838;
+}
+
+/* Alerts */
+.alert {
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.alert-error {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+/* Cart Page */
+.cart-items table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.cart-items table th, .cart-items table td {
+    padding: 12px;
+    text-align: left;
+}
+
+.cart-items table th {
+    background-color: #007bff;
+    color: white;
+}
+
+.cart-items table td {
+    background-color: #f9f9f9;
+}
+
+.cart-actions a {
+    margin-right: 10px;
+    padding: 12px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cart-actions a:hover {
+    background-color: #45a049;
+}
+
+/* Product Page */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.product-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-image {
+    width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.product-body {
+    padding-top: 10px;
+}
+
+.product-category {
+    font-size: 0.9rem;
+    color: #007bff;
+}
+
+.product-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.product-price {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.product-card .btn {
+    padding: 8px 15px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.product-card .btn:hover {
+    background-color: #0056b3;
+}
+
+/* Cart Page */
+.cart-items td, .cart-items th {
+    text-align: center;
+}
+
+.cart-total {
+    text-align: right;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .navbar .navbar-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .product-card {
+        padding: 15px;
+    }
+
+    .cart-items table th, .cart-items table td {
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar .brand {
+        font-size: 1.2rem;
+    }
+
+    .container {
+        width: 95%;
+    }
+}

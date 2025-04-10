@@ -5,7 +5,7 @@ session_start();
 $host = "localhost";
 $user = "root";
 $pass = "";
-$dbname = "db_loja";
+$dbname = "db_loja_roupas";
 
 try {
     $conn = new PDO("mysql:host=$host;dbname=$dbname", $user, $pass);
@@ -72,12 +72,12 @@ try {
         <?php if (isset($_SESSION['success'])): ?>
             <div class="alert alert-success">
                 <?= htmlspecialchars($_SESSION['success']) ?>
-                <?php unset($_SESSION['success']); ?> <!-- Limpa a variável de sucesso após mostrar -->
+                <?php unset($_SESSION['success']); ?>
             </div>
         <?php elseif (isset($_SESSION['error'])): ?>
             <div class="alert alert-error">
                 <?= htmlspecialchars($_SESSION['error']) ?>
-                <?php unset($_SESSION['error']); ?> <!-- Limpa a variável de erro após mostrar -->
+                <?php unset($_SESSION['error']); ?>
             </div>
         <?php endif; ?>
 
@@ -107,7 +107,6 @@ try {
                                 <td><?= $quantidade ?></td>
                                 <td>R$ <?= number_format($total_item, 2, ',', '.') ?></td>
                                 <td>
-                                    <!-- Link para remover o produto do carrinho -->
                                     <a href="carrinho.php?remover_id=<?= $produto['id'] ?>" class="btn btn-danger">Remover</a>
                                 </td>
                             </tr>
@@ -129,6 +128,5 @@ try {
             <a href="index.php" class="btn btn-primary">Voltar para a loja</a>
         <?php endif; ?>
     </div>
-
 </body>
 </html>

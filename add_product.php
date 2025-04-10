@@ -46,6 +46,7 @@ try {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adicionar Roupa</title>
+    <link rel="icon" href="imagens/ha.png" type="image/png">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>

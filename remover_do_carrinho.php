@@ -15,3 +15,17 @@ if (isset($_GET['id'])) {
 // Redirecionar de volta para o carrinho
 header("Location: carrinho.php");
 exit();
+?>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remover do Carrinho</title>
+    <link rel="icon" href="imagens/ha.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Conteúdo da página de remoção do carrinho -->
+</body>
+</html>

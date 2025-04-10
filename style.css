@@ -260,6 +260,7 @@ form button:hover {
         width: 95%;
     }
 }
+
 .product-info {
     display: flex;
     justify-content: space-between;
@@ -275,6 +276,7 @@ form button:hover {
     margin-top: 1rem;
     text-align: center;
 }
+
 /* Estilos específicos para loja de roupas */
 .product-details {
     display: flex;
